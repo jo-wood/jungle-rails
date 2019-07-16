@@ -1,12 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe Product, type: :model do
-  subject { 
-    described_class.new(name: "Star Wars Tee", price_cents: 2600, 
-                        quantity: 10, category: Category.new(name: "Apparel")) 
-  }
-  
   describe "Validations" do
+    subject { 
+      described_class.new(name: "Star Wars Tee", price_cents: 2600, 
+                          quantity: 10, category: Category.new(name: "Apparel")) 
+    }
 
     it "is valid with valid attriubtes" do
       expect(subject).to be_valid
@@ -31,7 +30,6 @@ RSpec.describe Product, type: :model do
       subject.category = nil
       expect(subject).to_not be_valid
     end
-
   end
 
 end
