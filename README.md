@@ -2,7 +2,7 @@
 
 A mini e-commerce application built with Rails 4.2 - a simulation of inheritting an existing code base and adding features in a unfamiliar language / framework.
 
-See these implemented features within [Expore jungleApp](#explore-jungleapp)
+See these implemented features within [Explore jungleApp](#explore-jungleapp)
 
 ## Dependencies
 
